@@ -1,0 +1,65 @@
+/*Google fonts som noget af det første*/
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+/*
+Bruges sådan:
+font-family: 'Abril Fatface', cursive;
+
+/* Variabler: genbruges og gør designvalg enkle */
+
+:root {
+  /*---Farver---- */
+
+  --orange: #f98b32;
+  --svagorange: #e3b670;
+  --blue: #1d29c3;
+  --turkis: #daeee7;
+  --pink: #daeee7;
+
+
+
+}
+/*-- Indsæt baggrundsbillede til hele skærmen--*/
+body {
+  background-image: url(images/landing_back.png);
+  height: 3000px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: scroll;
+}
+
+
+header {
+  text-align: center;
+  margin-top: -70px;
+  font-size: 4em;
+  font-family:'Abril Fatface', cursive;
+
+}
+
+header a {
+  text-decoration: none;
+  color: black;
+}
+/*Navigation*/
+/*fjern bullets*/
+
+li a, .dropbtn {
+  font-family: 'Abril fatface', cursive;
+  color: var(--blue);
+}
+
+
+#seneste {
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 2em;
+  text-decoration: none;
+margin-top: 690px;
+
+}
+
+#mestlæste {
+  font-family: 'Abril Fatface', cursive;
+  color: black;
+  font-size: 2em;
+}
