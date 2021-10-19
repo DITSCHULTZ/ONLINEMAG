@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../style.css">
+  <title>NUANCE - Livstil/Artikler</title>
+
+  <style>
+  .dropbtn {
+    list-style-type: none;
+    border: none;
+    margin-top: -500px;
+    padding-left: 500px;
+    overflow: hidden;
+    background-color: white;
+  }
+
+
+   a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+   a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
+  }
+
+  .dropdown {
+    position:relative;
+    display: inline-block;
+
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: black;
+    font-size: 0.6em;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+
+  </head>
+  <body id="artikler_livstil">
+    <section id="landingpage">
+
+      <header>
+
+        <h1><a href="../index.html"> NUANCE </a></h1>
+
+      </header>
+    </section>
+
+
+    <div class="dropdown">
+  <button class="dropbtn">BOLIG</button>
+  <div class="dropdown-content">
+  <a href="#">Inspiration</a>
+  <a href="#">Trends</a>
+  <a href="../pages/bolig.html">DIY Projekter</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">MAD</button>
+  <div class="dropdown-content">
+  <a href="../pages/opskrift.html">Opskrifter</a>
+  <a href="#">Artikler</a>
+  <a href="#">Sæson</a>
+  </div>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">LIVSTIL</button>
+  <div class="dropdown-content">
+  <a href="../pages/artikler_livstil.html">Artikler</a>
+  <a href="#">Trends</a>
+  <a href="#">Krea Projekter</a>
+  </div>
+  </div>
+
+  <!--Footer-->
+  <div class="row">
+    <div class="column">
+      <h2>Kontakt</h2>
+      <p>Tlf. 12345678 <br>
+        <br>
+      Mail: nuance@mail.dk
+    </p>
+    </div>
+    <div class="column">
+      <h2>Følg os</h2>
+      <p>Some text..</p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; NUANCE Magazine, 2021
+  </footer>
+
+  </body>
+  </html>

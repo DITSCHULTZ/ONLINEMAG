@@ -8,36 +8,37 @@
   <title>NUANCE MAGAZINE</title>
 
   <style>
-  ul {
+  .dropbtn {
     list-style-type: none;
-    margin-top: -105px;
+    border: none;
+    margin-top: -500px;
     padding-left: 500px;
     overflow: hidden;
     background-color: white;
   }
 
-  li {
-    float: left;
-  }
 
-  li a, .dropbtn {
+   a, .dropbtn {
     display: inline-block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
 
-  li a:hover, .dropdown:hover .dropbtn {
-    background-color: none;
+   a:hover, .dropdown:hover .dropbtn {
+    background-color: white;
   }
 
-  li.dropdown {
+  .dropdown {
+    position:relative;
     display: inline-block;
+
   }
 
   .dropdown-content {
     display: none;
     position: absolute;
+    right: 0;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -46,7 +47,8 @@
 
   .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    font-size: 0.6em;
+    padding: 14px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -57,11 +59,67 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
+/*Seneste - galleri*/
+
+
+  div.gallery {
+  border: 1px solid #ccc;
+  background-color: #cfe2d8;
+  width: 70%;
+  height: 40%;
+  margin-left: 50px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 0;
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
   </style>
 
 
 </head>
-<body>
+<body id="landing">
 
 <section id="landingpage">
 
@@ -72,38 +130,172 @@
   </header>
 </section>
 
-<ul>
-      <li class="dropdown">
-  <a href="javascript:void(0)" class="dropbtn">BOLIG</a>
+
+      <div class="dropdown">
+  <button class="dropbtn">BOLIG</button>
   <div class="dropdown-content">
     <a href="#">Inspiration</a>
     <a href="#">Trends</a>
-    <a href="#">DIY Projekter</a>
+    <a href="pages/bolig.html">DIY Projekter</a>
   </div>
-      <li><a href="#mad">MAD</a></li>
-    <li><a href="#livstil">LIVSTIL</a></li>
-</ul>
+</div>
+<div class="dropdown">
+<button class="dropbtn">MAD</button>
+<div class="dropdown-content">
+  <a href="pages/opskrift.html">Opskrifter</a>
+  <a href="#">Artikler</a>
+  <a href="#">Sæson</a>
+</div>
+</div>
+<div class="dropdown">
+<button class="dropbtn">LIVSTIL</button>
+<div class="dropdown-content">
+  <a href="pages/artikler_livstil.html">Artikler</a>
+  <a href="#">Trends</a>
+  <a href="#">Krea Projekter</a>
+</div>
+</div>
+
+
+
+<!--Responsivt galleri - Seneste og Mest læste-->
+<section id="artikelgalleri">
 
 <h2 id="seneste">Seneste</h2>
-<!--sæt billede ind i-->
-<div class="nye_post">
-<img class="mobile-image" src="images/dame.png" alt="Plakat med kvinde">
-<img class="mobile-image" src="images/risot.png" alt="Rødbederisotto">
-<img class="mobile-image" src="images/.png" alt="sko">
-<img class="mobile-image" src="images/pasta.png" alt="Spaghetti med spinat">
 
-
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pages/bolig.html">
+      <img src="images/dame.png" alt="Plakat med kvinde" width="600" height="400">
+    </a>
+    <div class="desc">Lav din egen plakatvæg</div>
+  </div>
 </div>
 
-<h2 id="mestlæste">Mest læste</h2>
-<!--sæt billede ind i-->
-<div class="populære">
-<img class="mobile-image" src="images/parfume.png" alt="Parfume">
-<img class="mobile-image" src="images/bluse.png" alt="Sy en bluse">
-<img class="mobile-image" src="images/ravioli.png" alt="Spinat Ravioli">
-<img class="mobile-image" src="images/vindue.png" alt="Vindueskarm med planter">
 
-
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pages/opskrift.html">
+      <img src="images/risot.png" alt="Rødbederisotto" width="600" height="400">
+    </a>
+    <div class="desc">Opskrift på rødbederisotto</div>
+  </div>
 </div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="pages/artikler_livstil.html">
+      <img src="images/mark.jpg" alt="En mark i midsommer" width="600" height="400">
+    </a>
+    <div class="desc">En bæredygtig hverdag</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/pasta.png">
+      <img src="images/pasta.png" alt="Spaghetti med spinat" width="600" height="400">
+    </a>
+    <div class="desc">Hurtig spaghetti med spinat</div>
+  </div>
+</div>
+
+
+
+<div class="clearfix"></div>
+
+<h2 id="mestlaste">Mest læste</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/parfume.png">
+      <img src="images/parfume.png" alt="Parfumer på tallerken" width="600" height="400">
+    </a>
+    <div class="desc">Guide til genbrugsjagten</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/bluse.png">
+      <img src="images/bluse.png" alt="Hjemmesyet bluse" width="600" height="400">
+    </a>
+    <div class="desc">Sy en bluse af sengetøj</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/ravioli.png">
+      <img src="images/ravioli.png" alt="Hjemmelavet ravioli" width="600" height="400">
+    </a>
+    <div class="desc">En nem kødfri uge</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="images/vindue.png">
+      <img src="images/vindue.png" alt="Vindueskarm med planter" width="600" height="400">
+    </a>
+    <div class="desc">Indret med planter</div>
+  </div>
+</div>
+</section>
+
+
+<div class="clearfix"></div>
+
+<h2 id="om_os">Om NUANCE</h2>
+<p id="tekst_om">NUANCE er et magasin, som fokuserer på en mere bæredygtig livstil - uden at det skal koste en bondegård.<br>
+  <br>
+
+Vi stræber efter at gøre det bæredygige valg det åbenlyse. En vane fremfor en pligt. <br>
+<br>
+
+Vi prøver hver måned at skabe et magasin med spændende artikler, som skal give inspiration til hverdagen.
+</p>
+
+<!-- Nyhedsbrev Sign up-->
+<form action="action_page.php">
+  <div class="container">
+    <h2>Tilmeld dig vores nyhedsbrev</h2>
+    <p>Få tilsendt nyheder med bl.a. nye udgivelser af magasinet, events og meget mere.</p>
+  </div>
+
+  <div class="container" style="background-color:#cfe2d8">
+    <input type="text" placeholder="Navn" name="name" required>
+    <input type="text" placeholder="Email addresse" name="mail" required>
+    <label>
+      <input type="checkbox" checked="checked" name="subscribe"> Jeg vil gerne modtage nyheder
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Tilmeld">
+  </div>
+</form>
+
+
+<!--Footer-->
+<div class="row">
+  <div class="column">
+    <h2>Kontakt</h2>
+    <p>Tlf. 12345678 <br>
+      <br>
+    Mail: nuance@mail.dk
+  </p>
+  </div>
+  <div class="column">
+    <h2>Følg os</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+<footer>
+  &copy; NUANCE Magazine, 2021
+</footer>
+
 </body>
 </html>

@@ -15,23 +15,112 @@ font-family: 'Abril Fatface', cursive;
   --turkis: #daeee7;
   --pink: #daeee7;
 
-
-
 }
+
+
 /*-- Indsæt baggrundsbillede til hele skærmen--*/
-body {
+#landing {
   background-image: url(images/landing_back.png);
-  height: 3000px;
+  height: 1000px;
 background-size: 100%;
 background-repeat: no-repeat;
 background-attachment: scroll;
 }
+#bolig {
+  background-image: url(images/bolig_back.png);
+  height:3000px;
+  background-size: 100%;
+  background-repeat: no-repeat;
 
+}
+#overskrift_bolig {
+  color: #e3b670;
+  font-family: 'Abril fatface', cursive;
+  font-size: 8em;
+  padding-left: 130px;
+  padding-right: 200px;
+}
+
+#akvarel {
+  height: 200px;
+  float: left;
+margin-left: -10px;
+margin-top: -175px;
+}
+
+#plakatvaeg {
+  height: 450px;
+  float:right;
+  margin-top: -450px;
+  padding-right: 40px;
+}
+
+#intro_plakat {
+  text-align: center;
+  padding-top: 150px;
+  padding-left: 500px;
+  padding-right: 120px;
+  font-size: 1.7em;
+  font-family: monospace;
+}
+
+#materialer_plakat {
+  font-family: 'Abril fatface', cursive;
+  padding-top: 180px;
+  padding-left: 200px;
+  font-size: 2em;
+
+}
+
+#materialeliste {
+  font-family: monospace;
+  padding-top: 20px;
+  padding-left: 250px;
+  padding-right: 700px;
+  font-size: 1.5em;
+}
+
+#komigang {
+  padding-top: 150px;
+  font-family: 'Abril fatface', cursive;
+  font-size: 2.6em;
+  text-align: center;
+}
+
+#komigang_p {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.8em;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+#hvor_materialer {
+  font-family: 'Abril fatface', cursive;
+  font-size: 2em;
+  padding-top: 150px;
+  padding-left: 80px;
+}
+#materialeguide {
+  font-family: monospace;
+  font-size: 1.3em;
+  text-align: center;
+  padding-right: 750px;
+  padding-left: 80px;
+}
+
+#tip_ramme {
+  font-family: monospace;
+  font-size: 1.3em;
+  text-align: center;
+  padding-left: 800px;
+  margin-top: -80px;
+}
 
 header {
   text-align: center;
-  margin-top: -70px;
-  font-size: 4em;
+  margin-top: -100px;
+  font-size: 5.9vw;
   font-family:'Abril Fatface', cursive;
 
 }
@@ -41,12 +130,18 @@ header a {
   color: black;
 }
 /*Navigation*/
-/*fjern bullets*/
 
-li a, .dropbtn {
+a, .dropbtn {
   font-family: 'Abril fatface', cursive;
-  color: var(--blue);
+    color: var(--blue);
 }
+
+.dropdown {
+  padding-left: 250px;
+}
+
+/*Artikel galleri*/
+
 
 
 #seneste {
@@ -54,12 +149,149 @@ li a, .dropbtn {
   color: black;
   font-size: 2em;
   text-decoration: none;
-margin-top: 690px;
+  margin-top: 570px;
+  padding-left: 30px;
 
 }
 
-#mestlæste {
+#mestlaste {
   font-family: 'Abril Fatface', cursive;
   color: black;
   font-size: 2em;
+  padding-left: 30px;
+
+}
+
+/*Info om NUANCE*/
+#om_os {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 5em;
+  color: var(--orange);
+  padding-top: 30px;
+  padding-left: 150px;
+}
+#tekst_om {
+  font-family: monospace;
+  font-size: 1.5em;
+  margin-right: 600px;
+  margin-left: 100px;
+  text-align: center;
+}
+
+
+/*Nyhedsbrev*/
+/* Style the form element with a border around it */
+form {
+  margin-top: 280px;
+  margin-right: 550px;
+  margin-left: 150px;
+  border: 4px solid #cfe2d8;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #cfe2d8;
+  color: var(--blue);
+}
+
+/* Style the input elements and the submit button */
+input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type=checkbox] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/*Risottoopskrift*/
+#opskrift {
+  background-image: url(images/risotto_back.png);
+  background-position: 0 150px;
+  height: 3000px;
+background-size: 100%;
+background-repeat: no-repeat;
+background-attachment: scroll;
+}
+
+#intro_risotto {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.3em;
+padding-left: 790px;
+padding-top: 280px;
+}
+
+#ingredienser_ris {
+  background-color: #f3f3dd;
+  width: 200px;
+  height: 430px;
+  float:right;
+  margin-top: 350px;
+  padding-right: 50px;
+  padding-left: 20px;
+  font-family: monospace;
+  font-size: 1.2em;
+}
+
+#guide_ris {
+  padding-left: 80px;
+  padding-right: 330px;
+  padding-top: 650px;
+}
+
+.guide_ris_o {
+  font-family: 'Abril fatface', cursive;
+  padding-bottom: 20px;
+}
+
+.guidetext_ris {
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+#tips_tilberedning {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.3em;
+  padding-top: 520px;
+  padding-left: 350px;
+  padding-right: 80px;
+}
+/*footer*/
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+padding-top: 100px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+footer {
+  padding-top: 100px;
 }
