@@ -275,6 +275,92 @@ padding-top: 280px;
   padding-left: 350px;
   padding-right: 80px;
 }
+
+
+/*Bæredygtighedsartikel*/
+#farveboksturkis {
+  background-color: #daeee7;
+  width: 850px;
+  height: 400px;
+}
+.overskrift_livstil {
+  font-family: 'Abril fatface', cursive;
+  color: #f06c8e;
+  font-size: 7.5em;
+  padding-left: 30%;
+}
+#introlivstil {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.5em;
+  padding: 10% 25% 5% 25%;
+}
+#farvebokssand {
+  background-color: #e3d8c2;
+  height: 350px;
+
+}
+.solnedgang {
+  height:350px;
+  width: 50%;
+}
+.starterguide {
+  font-family: 'Abril fatface',cursive;
+  text-align: center;
+  padding-left: 50%;
+  margin-top: -300px;
+  font-size: 2em;
+}
+.starterguidetext {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0 10% 0 58%;
+}
+#madpakke {
+  padding: 3% 30% 0 5%;
+}
+
+.madpakke {
+  font-family: 'Abril fatface', cursive;
+  padding-bottom: 3%;
+}
+
+.madpakketekst {
+  font-family: monospace;
+  font-size: 1.3em;
+}
+
+.madlavningfoto {
+  width: 85%;
+  padding: 2% 8% 0 8%;
+}
+.madlavningtext {
+  text-align: center;
+  font-family: monospace;
+  font-size: 1.4em;
+  padding: 5% 10% 10% 10%;
+}
+
+#farveboksturkis2 {
+    background-color: #daeee7;
+    height: 350px;
+    width: 650px;
+    float: right;
+
+}
+.outtroartikel {
+  font-family: 'Abril fatface', cursive;
+  text-align: center;
+  padding: 2% 5% 0 5%;
+  font-size: 2em;
+  color: #f06c8e;
+}
+.outtrotext {
+  font-family: monospace;
+  text-align: center;
+  font-size: 1.3em;
+}
 /*footer*/
 
 /* Create two equal columns that floats next to each other */
