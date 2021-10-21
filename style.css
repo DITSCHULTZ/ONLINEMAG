@@ -137,15 +137,12 @@ header a {
 
 
 /*Artikel galleri*/
-
-
-
 .seneste {
   font-family: 'Abril Fatface', cursive;
   color: black;
   font-size: 2em;
   text-decoration: none;
-  margin-top: 32%;
+  margin-top: 43%;
   padding-left: 30px;
 
 }
@@ -223,7 +220,6 @@ input[type=submit]:hover {
   height:2500px;
   background-size: 100%;
   background-repeat: no-repeat;
-margin-top: -200px;
 }
 #overskrift_bolig {
   color: #e3b670;
@@ -237,7 +233,7 @@ margin-top: -200px;
   height: 200px;
   float: left;
 margin-left: -10px;
-margin-top: -175px;
+margin-top: -177px;
 }
 
 #plakatvaeg {
@@ -468,6 +464,7 @@ padding-top: 100px;
 .row {
   display: flex;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
